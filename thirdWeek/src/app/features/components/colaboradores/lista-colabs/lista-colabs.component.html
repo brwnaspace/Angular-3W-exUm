@@ -1,2 +1,22 @@
-<h1>{{title}}</h1>
-
+<section class="colabs">
+    <h1>{{title}}</h1>
+    <div class="card-container">
+        <div class="card" *ngFor="let colab of colab">
+            <div class="avatar">
+                <img src="https://img.freepik.com/fotos-gratis/estilo-de-vida-beleza-e-moda-conceito-de-emocoes-de-pessoas-jovem-gerente-de-escritorio-feminino-asiatico-ceo-com-expressao-satisfeita-em-pe-sobre-um-fundo-branco-sorrindo-com-os-bracos-cruzados-sobre-o-peito_1258-59329.jpg" alt="Avatar">
+            </div>
+            <div class="details">
+                <h2>{{colab.nome}}</h2>
+                <p>{{colab.cargo}}</p>
+                <p>{{colab.empresa}}</p>
+            </div>
+            <div class="stars">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+            </div>
+        </div>
+    </div>
+</section>
